@@ -13,7 +13,7 @@ upstream MIT license; see [LICENSE](LICENSE).
 | Imported upstream commit | `883194a19b7244355c9bc975c0574c9842733637` |
 | Soundar maintenance branch | `soundar/v1.20.1` |
 | Soundar baseline tag | `v1.20.1-soundar.0` |
-| Governed fork release tag | `v1.20.1-soundar.6` |
+| Governed fork release tag | `v1.20.1-soundar.7` |
 | Fork Go module path | `github.com/SoundarTech/mediamtx` |
 | Functional delta at baseline | None |
 
@@ -52,10 +52,11 @@ only: it enables Platform to require the immutable private tag directly,
 rather than relying on a developer-local relative replacement.
 
 Unlike upstream development checkouts, private Go module releases include the
-generated `internal/core/VERSION` and `internal/servers/hls/hls.min.js` build
-inputs.  Both are required by Go embed directives when Platform downloads the
-immutable module archive; the HLS file is accepted only through the upstream
-generator's pinned SHA-256 verification.
+generated `internal/core/VERSION`, `internal/servers/hls/hls.min.js` and
+`internal/staticsources/rpicamera/mtxrpicam_{32,64}` build inputs.  They are
+required by Go embed directives when Platform downloads the immutable module
+archive; all downloaded assets are accepted only through upstream generators'
+pinned SHA-256 verification.
 
 ## Revoked Releases
 
