@@ -13,7 +13,7 @@ upstream MIT license; see [LICENSE](LICENSE).
 | Imported upstream commit | `883194a19b7244355c9bc975c0574c9842733637` |
 | Soundar maintenance branch | `soundar/v1.20.1` |
 | Soundar baseline tag | `v1.20.1-soundar.0` |
-| Governed fork release tag | `v1.20.1-soundar.3` |
+| Governed fork release tag | `v1.20.1-soundar.4` |
 | Functional delta at baseline | None |
 
 The baseline and governed release tags are annotated but not cryptographically
@@ -35,12 +35,12 @@ tags before the fork is used in a production build or release artifact.
 
 ## Platform Embedding Boundary
 
-The `embedded` package exposes a narrow, testable lifecycle facade for
+The `pkg/embedded` package exposes a narrow, testable lifecycle facade for
 Platform's media adapter.  It requires an explicit configuration path and
 does not parse command-line arguments, call `os.Exit`, install global signal
 handlers, perform self-updates or expose upstream internals as Platform API.
 
-The `v1.20.1-soundar.3` release contains this embedding facade and the small
+The `v1.20.1-soundar.4` release contains this embedding facade and the small
 core seam it requires.  No protocol listener is enabled by the facade itself;
 the owning Platform adapter must provide a reviewed configuration and enforce
 the surrounding authentication, network and audit boundaries.
