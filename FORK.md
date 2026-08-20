@@ -13,7 +13,7 @@ upstream MIT license; see [LICENSE](LICENSE).
 | Imported upstream commit | `883194a19b7244355c9bc975c0574c9842733637` |
 | Soundar maintenance branch | `soundar/v1.20.1` |
 | Soundar baseline tag | `v1.20.1-soundar.0` |
-| Governed fork release tag | `v1.20.1-soundar.5` |
+| Governed fork release tag | `v1.20.1-soundar.6` |
 | Fork Go module path | `github.com/SoundarTech/mediamtx` |
 | Functional delta at baseline | None |
 
@@ -41,7 +41,7 @@ Platform's media adapter.  It requires an explicit configuration path and
 does not parse command-line arguments, call `os.Exit`, install global signal
 handlers, perform self-updates or expose upstream internals as Platform API.
 
-The `v1.20.1-soundar.5` release contains this embedding facade and the small
+The `v1.20.1-soundar.6` release contains this embedding facade and the small
 core seam it requires.  No protocol listener is enabled by the facade itself;
 the owning Platform adapter must provide a reviewed configuration and enforce
 the surrounding authentication, network and audit boundaries.
@@ -50,6 +50,12 @@ The same release rewrites the Fork's own Go module declaration and internal
 imports to the private module path.  This is a supply-chain identity change
 only: it enables Platform to require the immutable private tag directly,
 rather than relying on a developer-local relative replacement.
+
+Unlike upstream development checkouts, private Go module releases include the
+generated `internal/core/VERSION` and `internal/servers/hls/hls.min.js` build
+inputs.  Both are required by Go embed directives when Platform downloads the
+immutable module archive; the HLS file is accepted only through the upstream
+generator's pinned SHA-256 verification.
 
 ## Revoked Releases
 
