@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/namespace"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/namespace"
 )
 
 var cases = []struct {

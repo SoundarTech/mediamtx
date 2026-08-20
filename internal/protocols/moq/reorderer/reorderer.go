@@ -5,8 +5,8 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/subgroup"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/subgroup"
 )
 
 // Reorderer is a subgroup reorderer.

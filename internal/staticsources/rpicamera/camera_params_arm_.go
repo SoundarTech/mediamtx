@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 type cameraParams struct {

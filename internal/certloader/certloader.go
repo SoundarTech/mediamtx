@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/confwatcher"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/confwatcher"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 const (

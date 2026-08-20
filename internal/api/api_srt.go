@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/servers/srt"
+	"github.com/SoundarTech/mediamtx/internal/servers/srt"
 )
 
 func (a *API) onSRTConnsList(ctx *gin.Context) {

@@ -14,10 +14,10 @@ import (
 
 	"golang.org/x/net/http2"
 
-	"github.com/bluenviron/mediamtx/internal/certloader"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/packetdumper"
-	"github.com/bluenviron/mediamtx/internal/restrictnetwork"
+	"github.com/SoundarTech/mediamtx/internal/certloader"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/packetdumper"
+	"github.com/SoundarTech/mediamtx/internal/restrictnetwork"
 )
 
 const (

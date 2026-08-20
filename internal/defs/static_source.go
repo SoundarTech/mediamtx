@@ -3,7 +3,7 @@ package defs
 import (
 	"context"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/conf"
 )
 
 // StaticSourceRunParams is the set of params passed to Run().

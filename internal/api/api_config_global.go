@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
 )
 
 func (a *API) onConfigGlobalGet(ctx *gin.Context) {

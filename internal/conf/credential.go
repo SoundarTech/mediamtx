@@ -10,7 +10,7 @@ import (
 
 	"github.com/matthewhartstonge/argon2"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
 )
 
 var (

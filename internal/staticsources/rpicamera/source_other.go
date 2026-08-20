@@ -5,7 +5,7 @@ package rpicamera
 import (
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/defs"
 )
 
 // Run implements StaticSource.

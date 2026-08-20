@@ -19,9 +19,9 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/recordstore"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/recordstore"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func writeSegment1(t *testing.T, fpath string) {

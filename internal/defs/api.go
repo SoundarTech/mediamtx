@@ -3,7 +3,7 @@ package defs
 import (
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/conf"
 )
 
 // APIOKStatus is the status of a successful response.

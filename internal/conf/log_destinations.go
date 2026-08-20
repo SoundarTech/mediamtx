@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 // LogDestinations is the logDestionations parameter.

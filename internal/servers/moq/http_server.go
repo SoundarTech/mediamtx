@@ -16,12 +16,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/httpp"
-	"github.com/bluenviron/mediamtx/internal/protocols/httpp3"
+	"github.com/SoundarTech/mediamtx/internal/auth"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/protocols/httpp"
+	"github.com/SoundarTech/mediamtx/internal/protocols/httpp3"
 )
 
 //go:embed publish_index.html

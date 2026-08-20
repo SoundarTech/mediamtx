@@ -5,7 +5,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/conf"
 )
 
 // APIForwardDestState is the state of a forward destination.

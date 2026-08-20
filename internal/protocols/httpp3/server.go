@@ -21,7 +21,7 @@ import (
 	"github.com/quic-go/quic-go/http3"
 	"github.com/quic-go/webtransport-go"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 const (

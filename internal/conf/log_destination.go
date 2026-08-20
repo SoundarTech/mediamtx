@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 // LogDestination represents a log destination.

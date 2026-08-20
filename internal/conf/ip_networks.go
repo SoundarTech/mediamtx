@@ -5,7 +5,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
 )
 
 // IPNetworks is a parameter that contains a list of IP networks.

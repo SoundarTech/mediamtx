@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
+	"github.com/SoundarTech/mediamtx/internal/auth"
 )
 
 func TestCredentials(t *testing.T) {

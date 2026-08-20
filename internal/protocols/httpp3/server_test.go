@@ -9,7 +9,7 @@ import (
 	"github.com/quic-go/quic-go/http3"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func TestServer(t *testing.T) {

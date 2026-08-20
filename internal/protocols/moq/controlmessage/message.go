@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/varint"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/varint"
 )
 
 // Message is a control message.

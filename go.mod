@@ -1,4 +1,4 @@
-module github.com/bluenviron/mediamtx
+module github.com/SoundarTech/mediamtx
 
 go 1.26.0
 

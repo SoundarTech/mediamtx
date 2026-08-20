@@ -24,9 +24,9 @@ import (
 	"github.com/pion/sdp/v3"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/protocols/whip"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/protocols/whip"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 type testServer struct {

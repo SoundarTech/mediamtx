@@ -22,7 +22,7 @@ import (
 	mcopus "github.com/bluenviron/mediacommon/v2/pkg/codecs/opus"
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 type rtpEncoderNotAvailableError struct {

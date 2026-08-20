@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/recordstore"
+	"github.com/SoundarTech/mediamtx/internal/recordstore"
 )
 
 var pathCases = []struct {

@@ -1,9 +1,9 @@
 package controlmessage
 
 import (
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/parameter"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/property"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/varint"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/parameter"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/property"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/varint"
 )
 
 const typeSubscribeOk varint.Varint = 0x04

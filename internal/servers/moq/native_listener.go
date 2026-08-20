@@ -10,8 +10,8 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/readbuffer"
 	"github.com/quic-go/quic-go"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 var supportedMoqtALPNs = []string{

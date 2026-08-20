@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/servers/moq"
+	"github.com/SoundarTech/mediamtx/internal/servers/moq"
 )
 
 func (a *API) onMoQSessionsList(ctx *gin.Context) {

@@ -17,13 +17,13 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/mpeg4audio"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/test"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/auth"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/externalcmd"
+	"github.com/SoundarTech/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 type dummyPathManager struct {

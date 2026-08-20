@@ -11,7 +11,7 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/mpeg4audio"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/catalog"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/catalog"
 )
 
 func TestFromStream(t *testing.T) {

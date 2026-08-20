@@ -17,10 +17,10 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/formats/mpegts/substructs"
 	srt "github.com/datarhei/gosrt"
 
-	"github.com/bluenviron/mediamtx/internal/formatlabel"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/formatlabel"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 func multiplyAndDivide(v, m, d int64) int64 {

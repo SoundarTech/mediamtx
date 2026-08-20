@@ -10,13 +10,13 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/metrics"
-	"github.com/bluenviron/mediamtx/internal/servers/hls"
+	"github.com/SoundarTech/mediamtx/internal/auth"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/externalcmd"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/metrics"
+	"github.com/SoundarTech/mediamtx/internal/servers/hls"
 )
 
 func pathConfCanBeUpdated(oldPathConf *conf.Path, newPathConf *conf.Path) bool {

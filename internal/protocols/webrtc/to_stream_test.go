@@ -9,10 +9,10 @@ import (
 	pwebrtc "github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/protocols/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func TestToStreamNoSupportedCodecs(t *testing.T) {

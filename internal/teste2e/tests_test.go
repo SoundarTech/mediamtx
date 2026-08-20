@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/core"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/core"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func newInstance(t *testing.T, conf string) (*core.Core, bool) {

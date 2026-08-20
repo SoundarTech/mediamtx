@@ -8,8 +8,8 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/mediamtx/internal/errordumper"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/errordumper"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 type streamMedia struct {

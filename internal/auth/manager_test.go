@@ -15,7 +15,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/conf"
 )
 
 var testTLSCertPub = []byte(`-----BEGIN CERTIFICATE-----

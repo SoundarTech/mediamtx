@@ -15,12 +15,12 @@ import (
 	pwebrtc "github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	forwardwebrtc "github.com/bluenviron/mediamtx/internal/forward/webrtc"
-	mtxwebrtc "github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/test"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	forwardwebrtc "github.com/SoundarTech/mediamtx/internal/forward/webrtc"
+	mtxwebrtc "github.com/SoundarTech/mediamtx/internal/protocols/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 func startWHIPServer(

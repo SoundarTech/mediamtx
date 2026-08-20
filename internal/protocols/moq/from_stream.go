@@ -18,9 +18,9 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/vp8"
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/vp9"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/catalog"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/catalog"
+	"github.com/SoundarTech/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 type writeDataFunc func(payload []byte, pts int64) error

@@ -21,16 +21,16 @@ import (
 	"github.com/google/uuid"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/catalog"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/controlmessage"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/parameter"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/property"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/subgroup"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/auth"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/catalog"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/controlmessage"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/parameter"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/property"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/subgroup"
+	"github.com/SoundarTech/mediamtx/internal/stream"
 )
 
 const (

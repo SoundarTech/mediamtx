@@ -8,7 +8,7 @@ import (
 	"github.com/pires/go-proxyproto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/conf"
 )
 
 func trustedProxies(cidrs ...string) conf.IPNetworks {

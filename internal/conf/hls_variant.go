@@ -6,7 +6,7 @@ import (
 
 	"github.com/bluenviron/gohlslib/v2"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
 )
 
 // HLSVariant is the hlsVariant parameter.

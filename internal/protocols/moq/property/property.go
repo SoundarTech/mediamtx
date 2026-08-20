@@ -4,7 +4,7 @@ package property
 import (
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/varint"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/varint"
 )
 
 // Property is an object property.

@@ -7,8 +7,8 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 func TestUnitRemuxer(t *testing.T) {

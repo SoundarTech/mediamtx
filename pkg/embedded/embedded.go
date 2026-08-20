@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/bluenviron/mediamtx/internal/core"
+	"github.com/SoundarTech/mediamtx/internal/core"
 )
 
 // ErrNilContext 表示 Wait 的调用方没有提供可取消的上下文。

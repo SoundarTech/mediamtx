@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/controlmessage"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/namespace"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/parameter"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/controlmessage"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/namespace"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/parameter"
 )
 
 var cases = []struct {

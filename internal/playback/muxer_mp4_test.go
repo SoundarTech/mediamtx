@@ -8,8 +8,8 @@ import (
 	mcodecs "github.com/bluenviron/mediacommon/v2/pkg/formats/mp4/codecs"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/recordstore"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/recordstore"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 // Test that tracks with no samples are not included in the output

@@ -3,9 +3,9 @@ package hooks
 import (
 	"net/url"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/externalcmd"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 // OnDemandParams are the parameters of OnDemand.

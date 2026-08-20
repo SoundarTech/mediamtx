@@ -3,10 +3,10 @@ package controlmessage
 import (
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/namespace"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/parameter"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/property"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/varint"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/namespace"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/parameter"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/property"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/varint"
 )
 
 const typePublish varint.Varint = 0x1d

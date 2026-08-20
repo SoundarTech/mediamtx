@@ -19,7 +19,7 @@ import (
 	"github.com/pion/transport/v4"
 	"github.com/pion/webrtc/v4"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 const (

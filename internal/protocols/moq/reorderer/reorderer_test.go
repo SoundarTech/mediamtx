@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/reorderer"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/subgroup"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/reorderer"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/subgroup"
 )
 
 type nopLogger struct{}

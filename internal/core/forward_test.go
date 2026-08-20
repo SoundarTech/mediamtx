@@ -19,9 +19,9 @@ import (
 	pwebrtc "github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
-	mtxwebrtc "github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	mtxwebrtc "github.com/SoundarTech/mediamtx/internal/protocols/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func startRTMPForwardServer(t *testing.T) (string, <-chan [][]byte, <-chan error) {

@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	ptls "github.com/bluenviron/mediamtx/internal/protocols/tls"
-	pwebrtc "github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/protocols/whip"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	ptls "github.com/SoundarTech/mediamtx/internal/protocols/tls"
+	pwebrtc "github.com/SoundarTech/mediamtx/internal/protocols/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/protocols/whip"
+	"github.com/SoundarTech/mediamtx/internal/stream"
 )
 
 // Dest is a WebRTC/WHIP forward destination.

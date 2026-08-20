@@ -7,7 +7,7 @@ import (
 
 	"github.com/quic-go/webtransport-go"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/defs"
 )
 
 type connWebTransport struct {

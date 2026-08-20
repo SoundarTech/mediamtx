@@ -12,11 +12,11 @@ import (
 	webrtclib "github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	pwebrtc "github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/staticsources/webrtc"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	pwebrtc "github.com/SoundarTech/mediamtx/internal/protocols/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/staticsources/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func whipOffer(body []byte) *webrtclib.SessionDescription {

@@ -17,8 +17,8 @@ import (
 )
 
 const (
-	gitRepo     = "https://github.com/bluenviron/mediamtx"
-	downloadURL = "https://github.com/bluenviron/mediamtx/releases/download/%s/mediamtx_%s_%s_%s.%s"
+	gitRepo     = "https://github.com/SoundarTech/mediamtx"
+	downloadURL = "https://github.com/SoundarTech/mediamtx/releases/download/%s/mediamtx_%s_%s_%s.%s"
 	executable  = "mediamtx"
 )
 

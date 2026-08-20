@@ -13,14 +13,14 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/certloader"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/packetdumper"
-	"github.com/bluenviron/mediamtx/internal/protocols/proxy"
-	"github.com/bluenviron/mediamtx/internal/restrictnetwork"
+	"github.com/SoundarTech/mediamtx/internal/certloader"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/externalcmd"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/packetdumper"
+	"github.com/SoundarTech/mediamtx/internal/protocols/proxy"
+	"github.com/SoundarTech/mediamtx/internal/restrictnetwork"
 )
 
 // ErrConnNotFound is returned when a connection is not found.

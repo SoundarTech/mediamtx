@@ -14,8 +14,8 @@ import (
 	"github.com/goccy/go-yaml/ast"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
 )
 
 var structs = []struct {
@@ -208,7 +208,7 @@ var structs = []struct {
 	},
 }
 
-const modulePathPrefix = "github.com/bluenviron/mediamtx/"
+const modulePathPrefix = "github.com/SoundarTech/mediamtx/"
 
 func wrapRef(rt reflect.Type, p openAPIProperty) openAPIProperty {
 	if p.Ref == "" {

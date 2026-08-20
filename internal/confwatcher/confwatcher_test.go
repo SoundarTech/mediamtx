@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/confwatcher"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/confwatcher"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func TestNoFile(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	mtls "github.com/bluenviron/mediamtx/internal/protocols/tls"
+	mtls "github.com/SoundarTech/mediamtx/internal/protocols/tls"
 )
 
 var testTLSCertPub = []byte(`-----BEGIN CERTIFICATE-----

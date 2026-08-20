@@ -11,10 +11,10 @@ import (
 	"github.com/bluenviron/gortmplib/pkg/codecs"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/staticsources/rtmp"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/staticsources/rtmp"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func TestSource(t *testing.T) {

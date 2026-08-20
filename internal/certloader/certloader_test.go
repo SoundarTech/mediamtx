@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/certloader"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/certloader"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func TestCertReload(t *testing.T) {

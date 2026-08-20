@@ -16,9 +16,9 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/formats/pmp4"
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/errordumper"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/errordumper"
+	"github.com/SoundarTech/mediamtx/internal/logger"
 )
 
 func mediasFromAlwaysAvailableFile(alwaysAvailableFile string) ([]*description.Media, error) {

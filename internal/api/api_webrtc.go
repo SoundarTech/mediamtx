@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/servers/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/servers/webrtc"
 )
 
 func (a *API) onWebRTCSessionsList(ctx *gin.Context) {

@@ -7,8 +7,8 @@ import (
 
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 type subStreamFormat struct {

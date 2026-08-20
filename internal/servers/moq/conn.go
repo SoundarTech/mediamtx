@@ -5,7 +5,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/defs"
 )
 
 type conn interface {

@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/servers/hls"
+	"github.com/SoundarTech/mediamtx/internal/servers/hls"
 )
 
 func (a *API) onHLSMuxersList(ctx *gin.Context) {

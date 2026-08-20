@@ -3,7 +3,7 @@ package conf
 import (
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
 )
 
 // RTSPRangeType is the type used in the Range header.

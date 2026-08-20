@@ -7,7 +7,7 @@ import (
 
 	"github.com/quic-go/quic-go"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/defs"
 )
 
 type connQUIC struct {

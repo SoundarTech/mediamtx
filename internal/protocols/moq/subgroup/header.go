@@ -4,7 +4,7 @@ package subgroup
 import (
 	"io"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/varint"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/varint"
 )
 
 // Header is the SUBGROUP_HEADER structure.

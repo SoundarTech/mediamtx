@@ -10,8 +10,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/httpp"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/SoundarTech/mediamtx/internal/protocols/httpp"
+	"github.com/SoundarTech/mediamtx/internal/test"
 )
 
 func TestUnixSocket(t *testing.T) {

@@ -10,11 +10,11 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/h264"
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/mpeg4audio"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/catalog"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/property"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/subgroup"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/catalog"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/property"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/subgroup"
+	"github.com/SoundarTech/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/unit"
 )
 
 func findTimestamp(props []property.Property) (int64, bool) {

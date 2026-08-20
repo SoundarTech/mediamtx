@@ -16,17 +16,17 @@ import (
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/webtransport-go"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	protomoq "github.com/bluenviron/mediamtx/internal/protocols/moq"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/catalog"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/controlmessage"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/parameter"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/reorderer"
-	"github.com/bluenviron/mediamtx/internal/protocols/moq/subgroup"
-	ptls "github.com/bluenviron/mediamtx/internal/protocols/tls"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	protomoq "github.com/SoundarTech/mediamtx/internal/protocols/moq"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/catalog"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/controlmessage"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/parameter"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/reorderer"
+	"github.com/SoundarTech/mediamtx/internal/protocols/moq/subgroup"
+	ptls "github.com/SoundarTech/mediamtx/internal/protocols/tls"
+	"github.com/SoundarTech/mediamtx/internal/stream"
 )
 
 const maxReorderedSubGroups = 50

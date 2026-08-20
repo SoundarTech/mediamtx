@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/SoundarTech/mediamtx/internal/conf/jsonwrapper"
 )
 
 // IPNetwork represents an IP network.

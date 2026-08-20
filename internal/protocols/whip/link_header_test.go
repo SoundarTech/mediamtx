@@ -6,7 +6,7 @@ import (
 	"github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/whip"
+	"github.com/SoundarTech/mediamtx/internal/protocols/whip"
 )
 
 var linkHeaderCases = []struct {

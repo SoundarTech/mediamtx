@@ -12,14 +12,14 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	forwardrtmp "github.com/bluenviron/mediamtx/internal/forward/rtmp"
-	forwardrtsp "github.com/bluenviron/mediamtx/internal/forward/rtsp"
-	forwardsrt "github.com/bluenviron/mediamtx/internal/forward/srt"
-	forwardwebrtc "github.com/bluenviron/mediamtx/internal/forward/webrtc"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/SoundarTech/mediamtx/internal/conf"
+	"github.com/SoundarTech/mediamtx/internal/defs"
+	forwardrtmp "github.com/SoundarTech/mediamtx/internal/forward/rtmp"
+	forwardrtsp "github.com/SoundarTech/mediamtx/internal/forward/rtsp"
+	forwardsrt "github.com/SoundarTech/mediamtx/internal/forward/srt"
+	forwardwebrtc "github.com/SoundarTech/mediamtx/internal/forward/webrtc"
+	"github.com/SoundarTech/mediamtx/internal/logger"
+	"github.com/SoundarTech/mediamtx/internal/stream"
 )
 
 const retryPause = 5 * time.Second
