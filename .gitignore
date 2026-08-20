@@ -7,5 +7,7 @@
 /internal/staticsources/rpicamera/mtxrpicam_*/
 /auto.crt
 /auto.key
+/embedded/auto.crt
+/embedded/auto.key
 /internal/core/auto.crt
 /internal/core/auto.key
