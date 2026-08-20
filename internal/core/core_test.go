@@ -23,6 +23,29 @@ func newInstance(t *testing.T, conf string) (*Core, bool) {
 	return New([]string{tmpf})
 }
 
+// TestNewForEmbedding 验证嵌入模式不读取默认配置路径，也不订阅宿主进程的全局信号。
+func TestNewForEmbedding(t *testing.T) {
+	confPath := filepath.Join(t.TempDir(), "mediamtx.yml")
+	conf := []byte("logLevel: error\n" +
+		"api: false\n" +
+		"metrics: false\n" +
+		"pprof: false\n" +
+		"playback: false\n" +
+		"rtsp: false\n" +
+		"rtmp: false\n" +
+		"hls: false\n" +
+		"webrtc: false\n" +
+		"srt: false\n" +
+		"moq: false\n")
+	err := os.WriteFile(confPath, conf, 0o600)
+	require.NoError(t, err)
+
+	instance, err := NewForEmbedding(confPath)
+	require.NoError(t, err)
+	defer instance.Close()
+	require.False(t, instance.installSignals)
+}
+
 func TestCoreErrors(t *testing.T) {
 	for _, ca := range []struct {
 		name string

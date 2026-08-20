@@ -110,7 +110,7 @@ func supportsIPv6() bool {
 	return true
 }
 
-var cli struct {
+type cliOptions struct {
 	Confpath     string `arg:"" default:""`
 	Version      bool   `help:"print version"`
 	CheckVersion bool   `help:"check whether a new version is available"`
@@ -175,6 +175,7 @@ type Core struct {
 	moqServer       *moq.Server
 	api             *api.API
 	confWatcher     *confwatcher.ConfWatcher
+	installSignals  bool
 
 	// in
 	chAPIConfigGlobalPatch       chan configGlobalPatchReq
@@ -190,6 +191,8 @@ type Core struct {
 
 // New allocates a Core.
 func New(args []string) (*Core, bool) {
+	var cli cliOptions
+
 	parser, err := kong.New(&cli,
 		kong.Description("MediaMTX "+string(version)+", "+runtime.GOOS+", "+getArch()),
 		kong.UsageOnError(),
@@ -236,11 +239,40 @@ func New(args []string) (*Core, bool) {
 		os.Exit(0)
 	}
 
+	confPaths := append([]string(nil), defaultConfPaths...)
+	if runtime.GOOS != "windows" {
+		confPaths = append(confPaths, defaultConfPathsNotWin...)
+	}
+
+	p, err := newCore(cli.Confpath, confPaths, true)
+	if err != nil {
+		fmt.Printf("ERR: %s\n", err)
+		return nil, false
+	}
+
+	return p, true
+}
+
+// NewForEmbedding 创建供宿主进程嵌入使用的 MediaMTX 实例。
+// 它不解析命令行参数、不注册进程全局信号处理器、不执行自升级，也不会调用 os.Exit；
+// 配置文件路径不能为空，调用方负责配置文件的生命周期和进程级信号处理。
+func NewForEmbedding(confPath string) (*Core, error) {
+	if confPath == "" {
+		return nil, fmt.Errorf("configuration path is required for embedded MediaMTX")
+	}
+
+	return newCore(confPath, nil, false)
+}
+
+// newCore 以调用方明确给出的配置来源创建 Core。
+// installSignals 仅供独立命令行程序启用；嵌入宿主必须自行管理进程信号，避免多个组件争夺全局信号。
+func newCore(confPath string, defaultPaths []string, installSignals bool) (*Core, error) {
 	ctx, ctxCancel := context.WithCancel(context.Background())
 
 	p := &Core{
 		ctx:                          ctx,
 		ctxCancel:                    ctxCancel,
+		installSignals:               installSignals,
 		chAPIConfigGlobalPatch:       make(chan configGlobalPatchReq),
 		chAPIConfigPathDefaultsPatch: make(chan configPathDefaultsPatchReq),
 		chAPIConfigPathAdd:           make(chan configPathAddReq),
@@ -259,34 +291,26 @@ func New(args []string) (*Core, bool) {
 	}
 	tempLogger.Initialize() //nolint:errcheck
 
-	confPaths := append([]string(nil), defaultConfPaths...)
-	if runtime.GOOS != "windows" {
-		confPaths = append(confPaths, defaultConfPathsNotWin...)
-	}
-
-	loadedConf, confPath, err := conf.Load(cli.Confpath, confPaths, tempLogger)
+	loadedConf, loadedConfPath, err := conf.Load(confPath, defaultPaths, tempLogger)
 	if err != nil {
-		fmt.Printf("ERR: %s\n", err)
-		return nil, false
+		return nil, err
 	}
 
-	p.confPath = confPath
+	p.confPath = loadedConfPath
 	p.conf.Store(loadedConf)
 
 	err = p.createResources(true)
 	if err != nil {
 		if p.logger != nil {
 			p.Log(logger.Error, "%s", err)
-		} else {
-			fmt.Printf("ERR: %s\n", err)
 		}
 		p.closeResources(nil)
-		return nil, false
+		return nil, err
 	}
 
 	go p.run()
 
-	return p, true
+	return p, nil
 }
 
 // Close closes Core and waits for all goroutines to return.
@@ -298,6 +322,12 @@ func (p *Core) Close() {
 // Wait waits for the Core to exit.
 func (p *Core) Wait() {
 	<-p.done
+}
+
+// Done 返回 Core 停止时关闭的通道。
+// 返回的通道只用于观察生命周期，调用方不得关闭它；该方法可被多个 goroutine 并发调用。
+func (p *Core) Done() <-chan struct{} {
+	return p.done
 }
 
 // Log implements logger.Writer.
@@ -315,10 +345,16 @@ func (p *Core) run() {
 		return make(chan struct{})
 	}()
 
-	interrupt := make(chan os.Signal, 1)
-	signal.Notify(interrupt, os.Interrupt)
-	if runtime.GOOS == "linux" {
-		signal.Notify(interrupt, syscall.SIGTERM)
+	var interrupt <-chan os.Signal
+	if p.installSignals {
+		signalChannel := make(chan os.Signal, 1)
+		signal.Notify(signalChannel, os.Interrupt)
+		if runtime.GOOS == "linux" {
+			signal.Notify(signalChannel, syscall.SIGTERM)
+		}
+		// 注意：独立进程退出前必须释放订阅，否则同一进程中的后续实例会继续接收旧订阅。
+		defer signal.Stop(signalChannel)
+		interrupt = signalChannel
 	}
 
 outer:
